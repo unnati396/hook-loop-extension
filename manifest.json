@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Hook Loop",
+  "version": "1.0.0",
+  "description": "Loop your favorite hook or chorus on YouTube Music and Spotify Web Player.",
+  "permissions": ["storage", "debugger", "tabs"],
+  "host_permissions": [
+    "https://open.spotify.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hook Loop",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["content-youtube-music.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

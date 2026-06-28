@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hook Loop</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="brand-mark" aria-hidden="true">
+        <span class="music-note"></span>
+      </div>
+      <div>
+        <h1>Hook Loop</h1>
+        <div class="tagline">Replay the hook</div>
+      </div>
+      <div class="site-badge hidden">
+        <span id="site-name">—</span>
+      </div>
+    </header>
+
+    <div id="no-site" class="hidden">
+      <p>Open <strong>YouTube Music</strong> or <strong>Spotify Web Player</strong> in this tab to use Hook Loop.</p>
+    </div>
+
+    <div id="needs-refresh" class="hidden">
+      <p>Extension was just installed/updated. Please refresh this tab once, then reopen this popup.</p>
+    </div>
+
+    <div id="main-ui" class="hidden">
+      <div class="now-playing">
+        <div id="track-title" class="track-title">—</div>
+        <div id="time-display" class="time-display">0:00 / 0:00</div>
+        <div class="mini-progress" aria-hidden="true">
+          <div id="loop-range" class="loop-range hidden"></div>
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <div id="saved-loop-status" class="saved-loop-status hidden">Saved loop</div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-row">
+          <label for="start-input">Start</label>
+          <input id="start-input" type="text" placeholder="1:23 or 83" inputmode="numeric" />
+          <button id="start-now-btn" class="small-btn" title="Use current playback position">Use current</button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-row">
+          <label for="end-input">End</label>
+          <input id="end-input" type="text" placeholder="1:45 or 105" inputmode="numeric" />
+          <button id="end-now-btn" class="small-btn" title="Use current playback position">Use current</button>
+        </div>
+      </div>
+
+      <p id="error-msg" class="error hidden"></p>
+
+      <div class="actions">
+        <button id="toggle-btn" class="primary-btn">Start Looping</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
