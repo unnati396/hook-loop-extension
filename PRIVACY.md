@@ -73,4 +73,5 @@ it is used, and whether any data leaves your device.
 
 ## Contact
 
-For privacy questions, contact: unnati731996@gmail.com
+If you have questions about this privacy policy, please open an issue on the
+[GitHub repository](https://github.com/unnati396/hook-loop-extension/issues).
