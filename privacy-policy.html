@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hook Loop Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fbf7ff;
+      --card: #ffffff;
+      --text: #24142f;
+      --muted: #6f5c7c;
+      --accent: #d93690;
+      --accent-strong: #8b3ff2;
+      --border: #eadcf4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(217, 54, 144, 0.14), transparent 28%),
+        radial-gradient(circle at 86% 8%, rgba(139, 63, 242, 0.14), transparent 30%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--card);
+      box-shadow: 0 24px 70px rgba(36, 20, 47, 0.1);
+    }
+
+    header {
+      padding: 42px 44px 34px;
+      color: #fff;
+      background: linear-gradient(135deg, #d93690, #8b3ff2);
+    }
+
+    .brand {
+      margin: 0 0 12px;
+      font-size: 15px;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 54px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .effective {
+      margin: 18px 0 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .content {
+      padding: 36px 44px 44px;
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+      line-height: 1.2;
+      color: #331640;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 8px 0 18px;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 6px;
+      background: #f5edf9;
+      color: #532169;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.94em;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .summary {
+      margin-bottom: 28px;
+      padding: 18px 20px;
+      border: 1px solid #efd6e9;
+      border-radius: 16px;
+      background: #fff7fc;
+    }
+
+    .summary p {
+      margin: 0;
+      color: #573064;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0;
+      }
+
+      header,
+      .content {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <header>
+        <p class="brand">Hook Loop</p>
+        <h1>Privacy Policy</h1>
+        <p class="effective">Effective date: June 28, 2026</p>
+      </header>
+
+      <div class="content">
+        <section class="summary" aria-label="Privacy summary">
+          <p>Hook Loop does not collect, sell, share, or transmit personal information. Loop settings are stored locally in your browser.</p>
+        </section>
+
+        <h2>Overview</h2>
+        <p>Hook Loop is a Chrome extension that lets users loop a selected section of a song on YouTube Music and Spotify Web Player.</p>
+
+        <h2>Data Collection</h2>
+        <p>Hook Loop does not collect, sell, share, or transmit personal information.</p>
+        <p>The extension does not use analytics, tracking pixels, advertising SDKs, or remote servers. Hook Loop does not send your listening activity, song titles, loop times, browsing history, or account information to the developer or to any third party.</p>
+
+        <h2>Data Stored Locally</h2>
+        <p>Hook Loop stores extension settings locally in Chrome storage on your device. This may include:</p>
+        <ul>
+          <li>loop start and end times</li>
+          <li>whether looping is currently enabled</li>
+          <li>saved loop times for songs you have configured</li>
+          <li>basic track identifiers or titles used only to match saved loop times to the same song later</li>
+        </ul>
+        <p>This data remains in your browser's local extension storage. It is not uploaded or synced by Hook Loop.</p>
+
+        <h2>Website Access</h2>
+        <p>Hook Loop works only on supported music sites:</p>
+        <ul>
+          <li>YouTube Music: <code>https://music.youtube.com/*</code></li>
+          <li>Spotify Web Player: <code>https://open.spotify.com/*</code></li>
+        </ul>
+        <p>On YouTube Music, the extension reads playback information from the page and controls playback timing locally in the tab.</p>
+        <p>On Spotify Web Player, the extension uses the Chrome Debugger API to read playback position and perform trusted mouse-based seeking on Spotify's playback timeline. This access is used only for Hook Loop's Spotify looping feature.</p>
+
+        <h2>Chrome Permissions</h2>
+        <p>Hook Loop requests the following Chrome permissions:</p>
+        <ul>
+          <li><code>storage</code>: saves loop settings and saved loops locally.</li>
+          <li><code>tabs</code>: detects whether the active tab is a supported music site.</li>
+          <li><code>debugger</code>: enables Spotify Web Player seeking through Chrome's debugging protocol.</li>
+          <li><code>https://open.spotify.com/*</code>: allows Spotify Web Player support.</li>
+        </ul>
+        <p>These permissions are used only to provide the extension's looping features.</p>
+
+        <h2>Third Parties</h2>
+        <p>Hook Loop does not share data with third parties. YouTube Music and Spotify Web Player remain governed by their own privacy policies when you use those services.</p>
+
+        <h2>Data Removal</h2>
+        <p>You can remove locally stored Hook Loop data by uninstalling the extension or by clearing the extension's site and storage data from Chrome.</p>
+
+        <h2>Changes</h2>
+        <p>This privacy policy may be updated if Hook Loop's features or data handling change. Any future changes should continue to describe what data is stored, how it is used, and whether any data leaves your device.</p>
+
+        <h2>Contact</h2>
+        <p>For privacy questions, contact: <a href="mailto:unnati731996@gmail.com">unnati731996@gmail.com</a></p>
+
+        <footer>
+          <p>Last updated: June 28, 2026</p>
+        </footer>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
